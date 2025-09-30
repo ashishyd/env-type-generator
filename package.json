@@ -8,7 +8,11 @@
     "env-type-gen": "dist/cli.js"
   },
   "files": [
-    "dist",
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "!dist/**/*.test.js",
+    "!dist/**/*.test.d.ts",
+    "!dist/**/*.map",
     "README.md",
     "LICENSE"
   ],
