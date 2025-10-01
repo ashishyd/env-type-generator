@@ -1,9 +1,35 @@
 # env-type-generator
 
-> Auto-generate TypeScript types from .env files with zero config
-
-[![npm version](https://img.shields.io/npm/v/env-type-generator.svg)](https://www.npmjs.com/package/env-type-generator)
+[![npm version](https://badge.fury.io/js/env-type-generator.svg)](https://www.npmjs.com/package/env-type-generator)
+[![Downloads](https://img.shields.io/npm/dm/env-type-generator.svg)](https://www.npmjs.com/package/env-type-generator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue.svg)](https://www.typescriptlang.org/)
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen.svg)](https://nodejs.org/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ashishyd/env-type-generator/pulls)
+[![GitHub stars](https://img.shields.io/github/stars/ashishyd/env-type-generator.svg?style=social)](https://github.com/ashishyd/env-type-generator)
+
+> **Zero-config TypeScript type generator for .env files** with Zod validation, watch mode, and IDE autocomplete
+
+Stop writing types for `process.env` manually. Let `env-type-generator` do it for you!
+
+---
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Usage](#usage)
+- [Examples](#examples)
+- [Framework Integration](#framework-integration)
+- [CI/CD Integration](#cicd-integration)
+- [Configuration](#configuration)
+- [API](#api)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
 
 ## Features
 

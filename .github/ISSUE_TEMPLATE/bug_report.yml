@@ -1,0 +1,117 @@
+name: Bug Report
+description: Report a bug or unexpected behavior
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please fill out the information below.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear description of the bug
+      placeholder: When I run env-type-gen, it fails to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: env-file
+    attributes:
+      label: .env File Content (sanitized)
+      description: Share your .env file structure (remove sensitive values)
+      placeholder: |
+        DATABASE_URL=xxx
+        API_KEY=xxx
+        PORT=3000
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: command
+    attributes:
+      label: Command Used
+      description: What command did you run?
+      placeholder: env-type-gen --validation zod --output src/types/env.d.ts
+      render: bash
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What you expected to happen
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened (include error messages)
+      placeholder: |
+        Error: Failed to parse .env file
+        ...
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: env-type-generator Version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: node-version
+    attributes:
+      label: Node.js Version
+      placeholder: "v20.10.0"
+    validations:
+      required: true
+
+  - type: input
+    id: typescript-version
+    attributes:
+      label: TypeScript Version
+      placeholder: "5.3.3"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      options:
+        - macOS
+        - Linux
+        - Windows
+        - WSL2
+    validations:
+      required: true
+
+  - type: dropdown
+    id: framework
+    attributes:
+      label: Framework (if applicable)
+      options:
+        - Not using a framework
+        - Next.js
+        - Express
+        - NestJS
+        - React
+        - Vue
+        - Other
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any other relevant information
