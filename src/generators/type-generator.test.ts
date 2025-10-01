@@ -35,9 +35,7 @@ describe('TypeGenerator', () => {
     });
 
     it('should mark required variables', () => {
-      const variables: EnvVariable[] = [
-        { key: 'DATABASE_URL', value: 'postgresql://localhost' },
-      ];
+      const variables: EnvVariable[] = [{ key: 'DATABASE_URL', value: 'postgresql://localhost' }];
 
       const options: GeneratorOptions = {
         parseTypes: false,
@@ -111,9 +109,7 @@ describe('TypeGenerator', () => {
     });
 
     it('should generate export env helper', () => {
-      const variables: EnvVariable[] = [
-        { key: 'API_KEY', value: 'secret' },
-      ];
+      const variables: EnvVariable[] = [{ key: 'API_KEY', value: 'secret' }];
 
       const options: GeneratorOptions = {
         parseTypes: false,
@@ -131,9 +127,7 @@ describe('TypeGenerator', () => {
 
   describe('generateRuntimeHelper', () => {
     it('should generate runtime helper without type parsing', () => {
-      const variables: EnvVariable[] = [
-        { key: 'API_KEY', value: 'secret' },
-      ];
+      const variables: EnvVariable[] = [{ key: 'API_KEY', value: 'secret' }];
 
       const options: GeneratorOptions = {
         parseTypes: false,
@@ -150,9 +144,7 @@ describe('TypeGenerator', () => {
     });
 
     it('should generate runtime helper with type parsing', () => {
-      const variables: EnvVariable[] = [
-        { key: 'PORT', value: '3000' },
-      ];
+      const variables: EnvVariable[] = [{ key: 'PORT', value: '3000' }];
 
       const options: GeneratorOptions = {
         parseTypes: true,
@@ -168,9 +160,7 @@ describe('TypeGenerator', () => {
     });
 
     it('should throw error for required variables in strict mode', () => {
-      const variables: EnvVariable[] = [
-        { key: 'DATABASE_URL', value: 'postgresql://localhost' },
-      ];
+      const variables: EnvVariable[] = [{ key: 'DATABASE_URL', value: 'postgresql://localhost' }];
 
       const options: GeneratorOptions = {
         parseTypes: false,
@@ -187,9 +177,7 @@ describe('TypeGenerator', () => {
     });
 
     it('should handle optional variables', () => {
-      const variables: EnvVariable[] = [
-        { key: 'OPTIONAL_KEY', value: 'value' },
-      ];
+      const variables: EnvVariable[] = [{ key: 'OPTIONAL_KEY', value: 'value' }];
 
       const options: GeneratorOptions = {
         parseTypes: false,

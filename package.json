@@ -1,6 +1,6 @@
 {
   "name": "env-type-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zero-config TypeScript type generator for .env files with Zod validation, watch mode, and IDE autocomplete support",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

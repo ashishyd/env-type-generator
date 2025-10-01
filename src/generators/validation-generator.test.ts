@@ -66,9 +66,9 @@ describe('ValidationGenerator', () => {
     });
 
     it('should throw error for unsupported validation library', () => {
-      expect(() =>
-        generator.generateSchema(variables, 'invalid' as never, options)
-      ).toThrow(GenerationError);
+      expect(() => generator.generateSchema(variables, 'invalid' as never, options)).toThrow(
+        GenerationError
+      );
     });
 
     it('should handle comments in schema', () => {
